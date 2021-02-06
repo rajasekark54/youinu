@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ratings",
+  "info": {
+    "name": "rating"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "passitive_like_count": {
+      "type": "integer"
+    },
+    "negative_like_count": {
+      "type": "integer"
+    },
+    "product_id": {
+      "type": "integer"
+    }
+  }
+}
