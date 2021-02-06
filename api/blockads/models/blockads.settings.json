@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blockads",
+  "info": {
+    "name": "blockads"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "product": {
+      "via": "blockads",
+      "model": "products"
+    }
+  }
+}

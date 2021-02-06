@@ -56,6 +56,13 @@
     },
     "sale_status": {
       "type": "boolean"
+    },
+    "blockads": {
+      "collection": "blockads",
+      "via": "product"
+    },
+    "is_block": {
+      "type": "boolean"
     }
   }
 }
