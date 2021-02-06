@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "mobile_number": {
+      "type": "biginteger"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "sub_category": {
+      "model": "sub-category",
+      "via": "product"
+    },
+    "category": {
+      "model": "category",
+      "via": "product"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "postads",
+        "peopleneeds"
+      ]
+    },
+    "sale_status": {
+      "type": "boolean"
+    }
+  }
+}
