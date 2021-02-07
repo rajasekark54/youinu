@@ -16,6 +16,10 @@
     "category": {
       "via": "brands",
       "model": "category"
+    },
+    "product": {
+      "via": "brand",
+      "model": "products"
     }
   }
 }

@@ -63,6 +63,13 @@
     },
     "is_block": {
       "type": "boolean"
+    },
+    "brand": {
+      "model": "brand",
+      "via": "product"
+    },
+    "price": {
+      "type": "float"
     }
   }
 }
