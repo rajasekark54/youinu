@@ -25,10 +25,6 @@
       "plugin": "upload",
       "required": false
     },
-    "product": {
-      "via": "category",
-      "model": "products"
-    },
     "sub_categories": {
       "collection": "sub-category",
       "via": "category"

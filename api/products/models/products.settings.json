@@ -40,12 +40,10 @@
       "required": false
     },
     "sub_category": {
-      "model": "sub-category",
-      "via": "product"
+      "model": "sub-category"
     },
     "category": {
-      "model": "category",
-      "via": "product"
+      "model": "category"
     },
     "type": {
       "type": "enumeration",
@@ -65,8 +63,7 @@
       "type": "boolean"
     },
     "brand": {
-      "model": "brand",
-      "via": "product"
+      "model": "brand"
     },
     "price": {
       "type": "float"
