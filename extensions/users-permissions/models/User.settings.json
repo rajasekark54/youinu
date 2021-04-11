@@ -78,6 +78,18 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "roles": {
+      "type": "string"
+    },
+    "is_guest_user": {
+      "type": "boolean"
+    },
+    "user_createdby": {
+      "type": "integer"
+    },
+    "user_updatedby": {
+      "type": "integer"
     }
   }
 }

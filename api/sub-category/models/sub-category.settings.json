@@ -27,8 +27,14 @@
       "required": false
     },
     "category": {
-      "via": "sub_categories",
-      "model": "category"
+      "model": "category",
+      "via": "sub_categories"
+    },
+    "user_createdby": {
+      "type": "integer"
+    },
+    "user_updatedby": {
+      "type": "integer"
     }
   }
 }

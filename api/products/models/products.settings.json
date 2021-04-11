@@ -57,8 +57,8 @@
       "type": "boolean"
     },
     "blockads": {
-      "collection": "blockads",
-      "via": "product"
+      "via": "product",
+      "collection": "blockads"
     },
     "is_block": {
       "type": "boolean"
@@ -68,6 +68,20 @@
     },
     "price": {
       "type": "float"
+    },
+    "user_createdby": {
+      "type": "integer"
+    },
+    "user_updatedby": {
+      "type": "integer"
+    },
+    "favorite": {
+      "via": "products",
+      "model": "favorite"
+    },
+    "ratings": {
+      "via": "product",
+      "collection": "rating"
     }
   }
 }

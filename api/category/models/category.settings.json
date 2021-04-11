@@ -27,12 +27,18 @@
       "required": false
     },
     "sub_categories": {
-      "collection": "sub-category",
-      "via": "category"
+      "via": "category",
+      "collection": "sub-category"
     },
     "brands": {
-      "collection": "brand",
-      "via": "category"
+      "via": "category",
+      "collection": "brand"
+    },
+    "user_createdby": {
+      "type": "integer"
+    },
+    "user_updatedby": {
+      "type": "integer"
     }
   }
 }

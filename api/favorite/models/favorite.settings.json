@@ -12,11 +12,18 @@
     "populateCreatorFields": true
   },
   "attributes": {
-    "product_id": {
-      "type": "integer"
-    },
     "status": {
       "type": "boolean"
+    },
+    "user_createdby": {
+      "type": "integer"
+    },
+    "user_updatedby": {
+      "type": "integer"
+    },
+    "products": {
+      "collection": "products",
+      "via": "favorite"
     }
   }
 }
